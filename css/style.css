@@ -296,7 +296,7 @@ body{
 	gap: 135px;
 }
 .who-we-are__image {
-	flex: 0 1 54.7%;
+	flex: 0 1 57.317%;
 }
 .who-we-are__image img{
 	max-width: 100%;
@@ -405,6 +405,9 @@ body{
 .body-courses__label,
 .body-courses__title:not(:last-child){
 	margin-bottom: 8px;
+}
+.body-courses__action{
+	flex-shrink: 0;
 }
 .body-courses__title {
 	font-weight: 900;
@@ -659,6 +662,11 @@ body{
 		margin-bottom: 45px;
 	}
 }
+@media(max-width:320px){
+	.advantages-main {
+		flex-direction: column;
+	}
+}
 /*==================================АДАПТИВ who we are===================================== */
 @media(max-width:1160px){
 	.who-we-are__box{
@@ -772,5 +780,16 @@ body{
 @media(max-width:490px){
 	.body-courses__title-main{
 		font-size: 35px;
+	}
+}
+@media(max-width:400px){
+	.body-courses__content{
+		flex-direction: column;
+		align-items: center;
+	}
+}
+@media(max-width:320px){
+	.course-card__media{
+		padding-bottom: 278px;
 	}
 }
